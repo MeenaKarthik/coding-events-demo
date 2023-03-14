@@ -45,7 +45,7 @@ public class EventController {
         }
 
         eventRepository.save(newEvent);
-        return "redirect:";
+        return "redirect:/events";
     }
 
     @GetMapping("delete")
@@ -64,7 +64,7 @@ public class EventController {
             }
         }
 
-        return "redirect:";
+        return "redirect:/events";
     }
 
 }
